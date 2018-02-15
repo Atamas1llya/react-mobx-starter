@@ -36,7 +36,7 @@
     "webpack": "^3.11.0"
   },
   "scripts": {
-    "start": "npx superstatic dist --port 7000 --host 0.0.0.0 --config superstatic.json",
+    "start": "npx superstatic dist --port 8080 --host 0.0.0.0 --config superstatic.json",
     "watch": "npx webpack --watch --colors --progress",
     "build": "npx webpack -p --progress",
     "lint": "npx eslint src"
