@@ -1,0 +1,22 @@
+{
+  "presets": ["env", "react"],
+  "plugins": [
+    "transform-async-to-generator",
+    "transform-decorators-legacy",
+    ["module-resolver", {
+      "alias": {
+        "@components": "./src/components",
+        "@stores": "./src/stores",
+        "@scenes": "./src/scenes",
+        "@services": "./src/services"
+      }
+    }]
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "transform-react-jsx-source"
+      ]
+    }
+  }
+}
